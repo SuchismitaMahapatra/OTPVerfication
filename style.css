@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+body{
+min-height: 100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#6883ac;
+}
+.container{
+ width: 300px;
+ height: auto;
+ padding:40px 30px;
+ background-color: bisque;
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 15px;
+}
+
+h4{
+    font-size: 20px;
+    color: rgb(56, 97, 83);
+}
+
+.form{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.input_field_box{
+    border:#e6b801;
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+ 
+.input_field_box input{
+    border:#000000;
+    max-width:30%;
+    height:60px;
+    text-align:center;
+    border-radius: 5px;
+    background:#f8046a;
+    font-size: 25px;
+}
+
+.input_field_box input::-webkit-inner-spin-button,
+.input_field_box input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.input_field_box input:focus{
+    
+    outline: 1.5px solid #3ca08a;
+    outline-offset: 2px;
+    position: relative;
+}
+
+form button{
+    margin-top: 25px;
+    width:42%;
+    margin: 0;
+    top: 100%;
+    color: #a33c3c;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 600;
+    border:none;
+    border-radius:6px;
+    pointer-events: none;
+    cursor: pointer;
+    background: #4aaf60;
+    transition: all 0.2s ease;
+}
+
+form button.active{
+    background: #ffcc00;
+    pointer-events: auto;
+    color:#000000;
+
+}
+
+form button.hover{
+    background: #e6b801;
+}
